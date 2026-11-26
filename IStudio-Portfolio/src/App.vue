@@ -9,7 +9,7 @@ import CTA from '@/components/sections/CTA.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#0D0E11] text-white">
+  <div class="min-h-screen bg-white text-[#0D0E11]">
     <Navbar />
     <main>
       <Hero />

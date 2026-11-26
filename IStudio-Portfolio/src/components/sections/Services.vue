@@ -46,7 +46,7 @@ const secondaryServices = [
 <template>
   <section 
     id="services" 
-    class="relative flex w-full flex-col items-center justify-center bg-[#0D0E11] px-6 py-28"
+    class="relative flex w-full flex-col items-center justify-center bg-white px-6 py-28"
     style="font-family: 'DM Sans', sans-serif;"
   >
     <div class="w-full max-w-7xl">
@@ -58,7 +58,7 @@ const secondaryServices = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6 }"
-          class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#D4FF33]"
+          class="flex items-center gap-2 rounded-full bg-[#D4FF33] px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#0D0E11]"
         >
           <span>+</span>
           <span>Service</span>
@@ -69,7 +69,7 @@ const secondaryServices = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.1 }"
-          class="mt-4 max-w-2xl text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl"
+          class="mt-4 max-w-2xl text-4xl font-bold tracking-tight text-[#0D0E11] md:text-5xl lg:text-6xl"
         >
           Smart digital solutions for modern brands
         </motion.h2>
@@ -84,37 +84,37 @@ const secondaryServices = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.7 }"
-          class="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-[#D4FF33]/15 bg-[#12141C] p-8 transition-colors hover:border-[#D4FF33]/40 md:col-span-3"
+          class="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-[#0D0E11]/10 bg-[#F8F9FA] p-8 transition-colors hover:border-[#0D0E11]/30 md:col-span-3"
         >
           <!-- Subtle Glow Background -->
-          <div class="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-[#D4FF33]/10 blur-[80px] transition-opacity group-hover:bg-[#D4FF33]/20"></div>
+          <div class="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-[#D4FF33]/25 blur-[80px] transition-opacity group-hover:bg-[#D4FF33]/40"></div>
           
           <div class="relative z-10">
-            <h3 class="text-xl font-bold text-[#D4FF33]">UI/UX Design</h3>
-            <p class="mt-2 text-sm font-medium text-white/70 max-w-sm">
+            <h3 class="text-xl font-bold text-[#0D0E11]">UI/UX Design</h3>
+            <p class="mt-2 text-sm font-medium text-[#0D0E11]/70 max-w-sm">
               Craft intuitive and engaging user experiences from initial wireframes to high-fidelity prototypes.
             </p>
           </div>
 
           <!-- CSS UI Mockup Graphic -->
-          <div class="relative z-10 mt-12 flex h-64 w-full flex-col overflow-hidden rounded-t-2xl border-x border-t border-[#D4FF33]/20 bg-[#1A1D27] p-5 shadow-2xl">
+          <div class="relative z-10 mt-12 flex h-64 w-full flex-col overflow-hidden rounded-t-2xl border-x border-t border-[#0D0E11]/10 bg-white p-5 shadow-lg">
             <!-- Browser Dots -->
             <div class="mb-6 flex gap-2">
-              <div class="h-3 w-3 rounded-full bg-white/20"></div>
-              <div class="h-3 w-3 rounded-full bg-white/20"></div>
-              <div class="h-3 w-3 rounded-full bg-white/20"></div>
+              <div class="h-3 w-3 rounded-full bg-[#0D0E11]/15"></div>
+              <div class="h-3 w-3 rounded-full bg-[#0D0E11]/15"></div>
+              <div class="h-3 w-3 rounded-full bg-[#0D0E11]/15"></div>
             </div>
             <!-- Mock Chat/UI Elements -->
             <div class="flex flex-col gap-4">
-              <div class="ml-auto w-2/3 rounded-2xl rounded-tr-sm bg-[#D4FF33]/10 p-3">
-                <div class="h-2 w-3/4 rounded bg-white/40"></div>
+              <div class="ml-auto w-2/3 rounded-2xl rounded-tr-sm bg-[#D4FF33]/40 p-3">
+                <div class="h-2 w-3/4 rounded bg-[#0D0E11]/60"></div>
               </div>
-              <div class="w-3/4 rounded-2xl rounded-tl-sm bg-[#0D0E11] p-3 border border-[#D4FF33]/10">
-                <div class="mb-2 h-2 w-full rounded bg-[#D4FF33]/60"></div>
-                <div class="h-2 w-1/2 rounded bg-[#D4FF33]/40"></div>
+              <div class="w-3/4 rounded-2xl rounded-tl-sm bg-[#F8F9FA] p-3 border border-[#0D0E11]/10">
+                <div class="mb-2 h-2 w-full rounded bg-[#0D0E11]/70"></div>
+                <div class="h-2 w-1/2 rounded bg-[#0D0E11]/30"></div>
               </div>
-              <div class="w-1/2 rounded-2xl rounded-tl-sm bg-[#0D0E11] p-3 border border-[#D4FF33]/10">
-                <div class="h-2 w-2/3 rounded bg-white/30"></div>
+              <div class="w-1/2 rounded-2xl rounded-tl-sm bg-[#F8F9FA] p-3 border border-[#0D0E11]/10">
+                <div class="h-2 w-2/3 rounded bg-[#0D0E11]/30"></div>
               </div>
             </div>
           </div>
@@ -126,41 +126,41 @@ const secondaryServices = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.7, delay: 0.15 }"
-          class="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-[#D4FF33]/15 bg-[#12141C] p-8 transition-colors hover:border-[#D4FF33]/40 md:col-span-3"
+          class="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-[#0D0E11]/10 bg-[#F8F9FA] p-8 transition-colors hover:border-[#0D0E11]/30 md:col-span-3"
         >
           <div class="relative z-10">
-            <h3 class="text-xl font-bold text-white/50 group-hover:text-white transition-colors">Frontend Architecture</h3>
-            <p class="mt-2 text-sm font-medium text-white/90 max-w-sm">
+            <h3 class="text-xl font-bold text-[#0D0E11]/70 group-hover:text-[#0D0E11] transition-colors">Frontend Architecture</h3>
+            <p class="mt-2 text-sm font-medium text-[#0D0E11]/70 max-w-sm">
               Build robust, scalable web applications from dynamic concept to seamless deployment.
             </p>
           </div>
 
           <!-- CSS Workflow Diagram Graphic -->
-          <div class="relative z-10 mt-12 flex h-64 w-full flex-col items-center justify-center rounded-xl bg-[#0D0E11]/50 border border-[#D4FF33]/5">
+          <div class="relative z-10 mt-12 flex h-64 w-full flex-col items-center justify-center rounded-xl bg-white border border-[#0D0E11]/10">
             <!-- Node 1 -->
-            <div class="rounded-full border border-white/20 bg-[#1A1D27] px-4 py-1.5 text-xs font-semibold text-white/70">
+            <div class="rounded-full border border-[#0D0E11]/15 bg-[#F8F9FA] px-4 py-1.5 text-xs font-semibold text-[#0D0E11]/80">
               Vue / React Client
             </div>
             <!-- Line -->
-            <div class="h-8 w-px bg-white/20"></div>
+            <div class="h-8 w-px bg-[#0D0E11]/20"></div>
             <!-- Node 2 (Active) -->
-            <div class="flex items-center gap-2 rounded-full bg-[#D4FF33] px-4 py-2 text-xs font-bold text-[#0D0E11] shadow-[0_0_20px_rgba(212,255,51,0.2)]">
+            <div class="flex items-center gap-2 rounded-full bg-[#D4FF33] px-4 py-2 text-xs font-bold text-[#0D0E11] shadow-[0_0_20px_rgba(212,255,51,0.4)]">
               <Database class="h-3 w-3" />
               API Gateway
             </div>
             <!-- Split Lines -->
             <div class="flex w-32 h-8">
-              <div class="w-1/2 border-b border-l border-white/20 rounded-bl-lg"></div>
-              <div class="w-1/2 border-b border-r border-white/20 rounded-br-lg"></div>
+              <div class="w-1/2 border-b border-l border-[#0D0E11]/20 rounded-bl-lg"></div>
+              <div class="w-1/2 border-b border-r border-[#0D0E11]/20 rounded-br-lg"></div>
             </div>
             <!-- Nodes 3 & 4 -->
             <div class="flex w-40 justify-between mt-0">
-              <div class="w-px h-4 bg-white/20 ml-[-1px]"></div>
-              <div class="w-px h-4 bg-white/20 mr-[-1px]"></div>
+              <div class="w-px h-4 bg-[#0D0E11]/20 ml-[-1px]"></div>
+              <div class="w-px h-4 bg-[#0D0E11]/20 mr-[-1px]"></div>
             </div>
             <div class="flex w-48 justify-between">
-              <div class="rounded-full border border-[#D4FF33]/30 bg-[#D4FF33]/10 px-3 py-1 text-[10px] font-semibold text-[#D4FF33]">Headless CMS</div>
-              <div class="rounded-full border border-white/20 bg-[#1A1D27] px-3 py-1 text-[10px] font-semibold text-white/50">Database</div>
+              <div class="rounded-full border border-[#0D0E11]/15 bg-[#D4FF33]/40 px-3 py-1 text-[10px] font-semibold text-[#0D0E11]">Headless CMS</div>
+              <div class="rounded-full border border-[#0D0E11]/15 bg-[#F8F9FA] px-3 py-1 text-[10px] font-semibold text-[#0D0E11]/60">Database</div>
             </div>
           </div>
         </motion.div>
@@ -173,19 +173,19 @@ const secondaryServices = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.1 * index }"
-          class="group col-span-1 flex flex-col justify-between rounded-3xl border border-[#D4FF33]/10 bg-[#12141C] p-8 transition-all hover:-translate-y-1 hover:border-[#D4FF33]/30 md:col-span-2"
+          class="group col-span-1 flex flex-col justify-between rounded-3xl border border-[#0D0E11]/10 bg-[#F8F9FA] p-8 transition-all hover:-translate-y-1 hover:border-[#0D0E11]/30 md:col-span-2"
         >
           <!-- Icon Box -->
-          <div class="mb-12 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-[#1A1D27] text-white/70 transition-colors group-hover:border-[#D4FF33]/30 group-hover:bg-[#D4FF33]/10 group-hover:text-[#D4FF33]">
+          <div class="mb-12 flex h-10 w-10 items-center justify-center rounded-xl border border-[#0D0E11]/10 bg-white text-[#0D0E11]/70 transition-colors group-hover:border-[#0D0E11]/20 group-hover:bg-[#D4FF33] group-hover:text-[#0D0E11]">
             <component :is="service.icon" class="h-5 w-5" />
           </div>
 
           <!-- Text Content -->
           <div>
-            <h4 class="text-sm font-bold text-white/60 transition-colors group-hover:text-white">
+            <h4 class="text-sm font-bold text-[#0D0E11]/80 transition-colors group-hover:text-[#0D0E11]">
               {{ service.title }}
             </h4>
-            <p class="mt-2 text-xs font-medium leading-relaxed text-white/50">
+            <p class="mt-2 text-xs font-medium leading-relaxed text-[#0D0E11]/60">
               {{ service.desc }}
             </p>
           </div>

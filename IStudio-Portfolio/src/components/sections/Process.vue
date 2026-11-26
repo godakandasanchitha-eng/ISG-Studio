@@ -36,7 +36,7 @@ const processSteps = [
 <template>
   <section 
     id="process" 
-    class="relative flex w-full flex-col items-center justify-center bg-[#0D0E11] px-6 py-28"
+    class="relative flex w-full flex-col items-center justify-center bg-white px-6 py-28"
     style="font-family: 'DM Sans', sans-serif;"
   >
     <div class="w-full max-w-7xl">
@@ -47,7 +47,7 @@ const processSteps = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6 }"
-          class="text-xs font-bold uppercase tracking-widest text-[#D4FF33]"
+          class="rounded-full bg-[#D4FF33] px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#0D0E11]"
         >
           Our Process
         </motion.span>
@@ -56,14 +56,14 @@ const processSteps = [
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.1 }"
-          class="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl"
+          class="mt-4 text-4xl font-bold tracking-tight text-[#0D0E11] md:text-5xl"
         >
           How we build your vision
         </motion.h2>
       </div>
 
       <!-- Process Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 divide-y divide-[#D4FF33]/15 md:divide-y-0 md:divide-x border-t border-b border-[#D4FF33]/15">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 divide-y divide-[#0D0E11]/10 md:divide-y-0 md:divide-x border-t border-b border-[#0D0E11]/10">
         <div 
           v-for="(step, index) in processSteps" 
           :key="step.step"
@@ -78,26 +78,26 @@ const processSteps = [
              class="flex flex-col h-full"
           >
             <!-- Step Number -->
-            <div class="mb-8 flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-xs font-semibold text-white/50 transition-colors group-hover:border-[#D4FF33] group-hover:text-[#D4FF33]">
+            <div class="mb-8 flex h-8 w-8 items-center justify-center rounded-full border border-[#0D0E11]/20 text-xs font-semibold text-[#0D0E11]/60 transition-colors group-hover:border-[#0D0E11] group-hover:bg-[#D4FF33] group-hover:text-[#0D0E11]">
               {{ step.step }}
             </div>
 
-            <h3 class="mb-4 text-2xl font-bold tracking-tight text-white md:text-3xl">
+            <h3 class="mb-4 text-2xl font-bold tracking-tight text-[#0D0E11] md:text-3xl">
               {{ step.title }}
             </h3>
             
-            <p class="text-sm font-medium leading-relaxed text-white/60">
+            <p class="text-sm font-medium leading-relaxed text-[#0D0E11]/60">
               {{ step.description }}
             </p>
           </motion.div>
 
-          <!-- Bottom Image (Animated up on scroll for middle items if desired, but applied consistently here for smoothness) -->
+          <!-- Bottom Image -->
           <motion.div 
             :initial="{ opacity: 0, y: 60 }"
             :while-in-view="{ opacity: 1, y: 0 }"
             :viewport="{ once: true, margin: '-50px' }"
             :transition="{ duration: 0.8, delay: 0.2 + (index * 0.1) }"
-            class="mt-12 aspect-[4/3] w-full overflow-hidden rounded-xl border border-white/10"
+            class="mt-12 aspect-[4/3] w-full overflow-hidden rounded-xl border border-[#0D0E11]/10"
           >
             <img 
               :src="step.image" 

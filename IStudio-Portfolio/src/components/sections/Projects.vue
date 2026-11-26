@@ -31,7 +31,7 @@ const projects = [
 <template>
   <section 
     id="work" 
-    class="relative flex w-full flex-col items-center justify-center bg-[#0D0E11] px-6 py-28"
+    class="relative flex w-full flex-col items-center justify-center bg-white px-6 py-28"
     style="font-family: 'DM Sans', sans-serif;"
   >
     <!-- Section Header -->
@@ -41,7 +41,7 @@ const projects = [
         :while-in-view="{ opacity: 1, y: 0 }"
         :viewport="{ once: true }"
         :transition="{ duration: 0.6 }"
-        class="text-xs font-bold uppercase tracking-widest text-[#D4FF33]"
+        class="rounded-full bg-[#D4FF33] px-3 py-1 text-xs font-bold uppercase tracking-widest text-[#0D0E11]"
       >
         Selected Works
       </motion.span>
@@ -50,9 +50,9 @@ const projects = [
         :while-in-view="{ opacity: 1, y: 0 }"
         :viewport="{ once: true }"
         :transition="{ duration: 0.6, delay: 0.1 }"
-        class="mt-3 text-3xl font-bold tracking-tight text-white md:text-5xl"
+        class="mt-4 text-3xl font-bold tracking-tight text-[#0D0E11] md:text-5xl"
       >
-        Crafted with <span class="text-[#D4FF33]">Precision</span>
+        Crafted with <span class="rounded-xl bg-[#D4FF33] px-3 py-0.5 text-[#0D0E11]">Precision</span>
       </motion.h2>
     </div>
 
@@ -68,13 +68,13 @@ const projects = [
         class="group flex flex-col gap-3"
       >
         <!-- 1. Top Image Box -->
-        <a :href="project.link" class="relative aspect-[16/10] w-full overflow-hidden rounded-3xl border border-[#D4FF33]/15 bg-[#12141C] shadow-2xl transition-all duration-300 group-hover:border-[#D4FF33]/40 group-hover:-translate-y-1.5">
+        <a :href="project.link" class="relative aspect-[16/10] w-full overflow-hidden rounded-3xl border border-[#0D0E11]/10 bg-[#F8F9FA] shadow-md transition-all duration-300 group-hover:border-[#0D0E11]/30 group-hover:-translate-y-1.5">
           <img 
             :src="project.image" 
             :alt="project.title"
             class="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60"></div>
           
           <!-- Floating Arrow Icon on Hover -->
           <div class="absolute right-5 top-5 flex h-10 w-10 translate-y-2 opacity-0 items-center justify-center rounded-full bg-[#D4FF33] text-[#0D0E11] shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
@@ -83,9 +83,9 @@ const projects = [
         </a>
 
         <!-- 2. Bottom Details Box (Thin rectangle with title and tags in a single row) -->
-        <div class="flex w-full items-center justify-between gap-3 rounded-xl border border-[#D4FF33]/15 bg-[#12141C] px-5 py-3.5 shadow-xl transition-all duration-300 group-hover:border-[#D4FF33]/30">
+        <div class="flex w-full items-center justify-between gap-3 rounded-xl border border-[#0D0E11]/10 bg-[#F8F9FA] px-5 py-3.5 shadow-sm transition-all duration-300 group-hover:border-[#0D0E11]/25">
           <!-- Title -->
-          <h3 class="text-sm font-bold tracking-tight text-white truncate lg:text-base">
+          <h3 class="text-sm font-bold tracking-tight text-[#0D0E11] truncate lg:text-base">
             {{ project.title }}
           </h3>
 
@@ -94,7 +94,7 @@ const projects = [
             <span 
               v-for="tag in project.tags" 
               :key="tag"
-              class="rounded-full border border-[#D4FF33]/20 bg-[#D4FF33]/5 px-2.5 py-1 text-[10px] font-semibold text-white/80 transition-colors"
+              class="rounded-full border border-[#0D0E11]/10 bg-white px-2.5 py-1 text-[10px] font-semibold text-[#0D0E11]/80 transition-colors"
             >
               {{ tag }}
             </span>

@@ -6,7 +6,7 @@ import { Sparkles } from '@lucide/vue'
 <template>
   <section 
     id="about" 
-    class="relative flex w-full flex-col items-center justify-center bg-[#0D0E11] px-6 py-28"
+    class="relative flex w-full flex-col items-center justify-center bg-white px-6 py-28"
     style="font-family: 'DM Sans', sans-serif;"
   >
     <div class="w-full max-w-6xl">
@@ -18,7 +18,7 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6 }"
-          class="text-3xl font-bold tracking-tight text-white md:text-5xl"
+          class="text-3xl font-bold tracking-tight text-[#0D0E11] md:text-5xl"
         >
           Rooted in digital excellence
         </motion.h2>
@@ -28,7 +28,7 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.1 }"
-          class="mt-6 max-w-2xl text-base font-medium text-white/60 md:text-lg"
+          class="mt-6 max-w-2xl text-base font-medium text-[#0D0E11]/60 md:text-lg"
         >
           ISGStudio is a creative technology agency dedicated to transforming the way brands connect with their audiences through seamless design and code.
         </motion.p>
@@ -39,9 +39,9 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, scale: 1 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.2 }"
-          class="my-8 text-[#D4FF33]"
+          class="my-8 flex h-10 w-10 items-center justify-center rounded-full bg-[#D4FF33] text-[#0D0E11]"
         >
-          <Sparkles class="h-6 w-6" />
+          <Sparkles class="h-5 w-5" />
         </motion.div>
 
         <motion.p 
@@ -49,7 +49,7 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.6, delay: 0.3 }"
-          class="max-w-xl text-sm font-semibold tracking-wide text-white/40"
+          class="max-w-xl text-sm font-semibold tracking-wide text-[#0D0E11]/50"
         >
           Founded with a clear vision: to merge aesthetic minimalism with high-performance web architecture.
         </motion.p>
@@ -64,17 +64,17 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.7 }"
-          class="flex flex-col items-center rounded-3xl border border-[#D4FF33]/15 bg-[#12141C] p-10 text-center shadow-2xl md:p-14"
+          class="flex flex-col items-center rounded-3xl border border-[#0D0E11]/10 bg-[#F8F9FA] p-10 text-center shadow-sm md:p-14"
         >
-          <h3 class="mb-10 text-2xl font-bold text-white md:text-3xl">
+          <h3 class="mb-10 text-2xl font-bold text-[#0D0E11] md:text-3xl">
             Our story
           </h3>
 
-          <h4 class="mb-8 text-lg font-bold leading-snug text-[#D4FF33] md:text-xl">
+          <h4 class="mb-8 text-lg font-bold leading-snug text-[#0D0E11] underline decoration-[#D4FF33] decoration-4 underline-offset-4 md:text-xl">
             We're helping shape the future of digital experiences.
           </h4>
 
-          <div class="flex flex-col gap-6 text-sm font-medium leading-relaxed text-white/70 md:text-base">
+          <div class="flex flex-col gap-6 text-sm font-medium leading-relaxed text-[#0D0E11]/70 md:text-base">
             <p>
               ISGStudio is a digital design and development agency dedicated to transforming the way modern brands exist online. We combine deep UI/UX expertise with cutting-edge frontend engineering.
             </p>
@@ -93,15 +93,15 @@ import { Sparkles } from '@lucide/vue'
           :while-in-view="{ opacity: 1, y: 0 }"
           :viewport="{ once: true }"
           :transition="{ duration: 0.7, delay: 0.2 }"
-          class="relative aspect-square w-full overflow-hidden rounded-3xl border border-[#D4FF33]/15 lg:aspect-auto"
+          class="relative aspect-square w-full overflow-hidden rounded-3xl border border-[#0D0E11]/10 lg:aspect-auto"
         >
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" 
             alt="Team collaborating in studio" 
             class="h-full w-full object-cover object-center"
           />
-          <!-- Subtle Dark Overlay to match theme -->
-          <div class="absolute inset-0 bg-black/20 mix-blend-overlay"></div>
+          <!-- Subtle Overlay -->
+          <div class="absolute inset-0 bg-black/5"></div>
         </motion.div>
 
       </div>
